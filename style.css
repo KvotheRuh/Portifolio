@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+html{
+   scroll-behavior: smooth; 
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/Logo.png);
+    background-size: cover;
+    background-position: center;  
+}
+
+.conteudo{
+    padding: 10px 10%;
+}
+
+#header{
+   padding-top: 100px;
+}
+
+nav{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 10%;
+   background: #000; 
+   box-shadow: 0 4px 20px rgba(143, 37, 37, 0.822);
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    position: relative;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #a03434;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+ 
+.header-text{
+    margin-top: 12%;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 12px;
+   
+}
+
+.header-text h1 span{
+    color: #a03434;
+
+}
+ /*Sobre Mim*/
+
+#sobre{
+    padding: 100px;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-col-1{
+   flex-basis: 35%;
+}
+
+.sobre-col-1 img{
+   width: 100%;
+   border-radius: 15px;
+}
+
+.sobre-col-2{
+   flex-basis: 60%;
+}
+
+.sub-titulo{
+   font-size: 60px;
+   font-weight: 600;
+   color: #fff;
+}
+
+/*---Portfolio--*/
+#projetos {
+   padding: 80px 40px;
+   border-radius: 30px;
+}
+
+.lista-trabalhos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 40px;
+   margin-top: 3rem;
+}
+
+.trabalho {
+   background: #111;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+   transition: all 0.4s ease;
+   display: flex;
+   flex-direction: column;
+   height: 100%; 
+}
+
+.trabalho img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   transition: 0.4s ease;
+}
+
+.trabalho:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 20px 45px rgba(143, 37, 37, 0.822);
+   color: #a03434;
+}
+
+.layer {
+   padding: 20px;
+   background: #1a1a1a;
+
+   display: flex;
+   flex-direction: column;
+   flex: 1; 
+}
+
+.layer h3 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: #fff;
+}
+
+.layer p {
+   font-size: 14px;
+   color: #aaa;
+   margin-bottom: 15px;
+
+   min-height: 60px; 
+}
+
+.layer a {
+   margin-top: auto; 
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 45px;
+   padding: 0 20px;
+   background:  rgba(143, 37, 37, 0.822);
+   border-radius: 30px;
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+}
+
+.layer a:hover {
+   background: rgba(192, 37, 37, 0.822);
+}
+
+/*Contatos*/
+
+.contatos{
+   flex-basis: 35%;
+   margin-left: 40px;
+}
+
+.contatos h1{
+   font-size: 30px;
+}
+
+.contatos p{
+   margin-top: 30px;
+}
+
+.contatos p i{
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+.social-icons{
+   margin-top: 30px;
+   
+}
+
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   margin-bottom: 30px ;
+   color: #ababab;
+   display: inline-block;
+   transition: transform 0.5s;
+
+}
+
+.social-icons a:hover{
+   color: #9900ff;
+   transform: translateY(-5px);
+}
