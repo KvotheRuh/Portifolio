@@ -429,7 +429,7 @@ nav ul li a:hover:after{
     #header{
         height: 80vh;
         background-position: center;
-        background-image: none; /* remove a logo no responsivo */
+        background-image: none; 
     }
 
     #sobre{
